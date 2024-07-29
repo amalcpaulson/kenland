@@ -17,11 +17,10 @@ html {
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
@@ -35,6 +34,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: fit-content;
 }
 header .needs {
   display: flex;
@@ -99,3 +99,72 @@ nav > a img {
   width: fit-content;
   color: white;
 }
+.call {
+  background-color: #f4383c;
+  border-radius: 50%;
+  padding: 10px;
+  height: 40px !important;
+}
+
+
+@media screen and (max-width: 1090px) {
+  .menu-button {
+    display: block;
+    color: white;
+  }
+  .nav-right > a {
+    display: none;
+  }
+  .secondarynav {
+    padding: 5px 5vw;
+  }
+}
+@media screen and (max-width: 720px) {
+  .secondarynav {
+    width: 100vw;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+    font-size: 13px;
+  }
+  header .needs a {
+    font-size: 12px;
+  }
+}
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #164d92 !important;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+.popup .nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.popup .nav-right > a {
+  border-left: none;
+  padding: 10px 0;
+  color: rgb(255, 255, 255) !important;
+  font-size: 18px;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px;
+}
+
+

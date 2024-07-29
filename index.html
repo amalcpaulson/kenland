@@ -6,10 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenland</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./pagescss/home.css">
     <style>
         .rotated {
             transform: rotate(45deg);
             transition: transform 0.3s ease;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup .nav-right>a {
+            display: block;
+            border-left: none;
+            padding: 10px 0;
+            color: black;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -49,7 +80,7 @@
                         Appointment</p>
                 </a>
                 <a href="#" onclick="rotateButton(this)">
-                    <img src="./images/navbar/call.png" alt="Call">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
                     <p>Call Us</p>
                     <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
                 </a>
@@ -67,6 +98,70 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
+    <div class="popup" id="popup" onclick="closeMenu(event)">
+        <div class="popup-content">
+            <div class="nav-right">
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="home">
+            <button onclick="prevSlide()">
+                <img src="./images/navigatearrow.webp" alt="Previous">
+            </button>
+            <div id="slider" class="slider">
+                <img src="./images/home/home.webp" alt="Home Image 1">
+                <img src="./images/home/home.webp" alt="Home Image 2">
+                <img src="./images/home/home.webp" alt="Home Image 3">
+            </div>
+            <button onclick="nextSlide()">
+                <img src="./images/navigatearrow.webp" alt="Next">
+            </button>
+            <div class="pagination" id="pagination">
+                <div class="dot active" onclick="setSlide(0)"></div>
+                <div class="dot" onclick="setSlide(1)"></div>
+                <div class="dot" onclick="setSlide(2)"></div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 
