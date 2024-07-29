@@ -6,33 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenland</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .rotated {
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="needs">
-            <a href="tel:(313)388-2400">(313) 388-2400</a>
-            <a href="#">Request an Appointment</a>
-            <a href="#">New Patient Online Booking</a>
+            <a href="#">Need Help?</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Leave Feedback</a>
         </div>
         <nav>
-            <a href="#home"><img src="./images/fav.webp" alt="Polyviou Family Dentistry"></a>
+            <a href="#"><img src="./images/Logo.webp" alt="Kenland Logo"></a>
             <div class="nav-right">
-                <div class="contact-info">
-                    <a href="tel:(313)388-2400">(313) 388-2400</a>
-                    <a href="#">Request an Appointment</a>
-                    <a href="#">New Patient Online Booking</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#patients">For Patients</a></li>
-                    <li><a href="#invisalign">Invisalign</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
                 <button class="menu-button" onclick="toggleMenu()">☰</button>
             </div>
+        </nav>
+        <nav class="secondarynav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Facilities</a>
+            <a href="#">Our Team</a>
+            <a href="#">Gallery</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Media</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
     <script src="script.js"></script>

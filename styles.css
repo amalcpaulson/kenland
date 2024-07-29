@@ -23,3 +23,79 @@ body {
   margin: 0;
   background-color: #f0f0f0;
 }
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+}
+header {
+  background: #164289;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .needs {
+  display: flex;
+  padding: 10px 30px 10px;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .needs a {
+  color: white;
+
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  background-color: #164d92;
+  justify-content: space-between;
+  padding: 10px 30px 10px 9vw;
+  gap: 20px;
+}
+
+nav > a {
+  width: 200px;
+}
+
+nav > a img {
+  width: 100%;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right > a {
+  border-left: 1.5px solid #d9d9d9;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  font-size: 14px;
+}
+.nav-right > a img:nth-child(1) {
+  height: 25px;
+}
+.nav-right > a button img {
+  height: 15px !important;
+}
+.menu-button {
+  display: none;
+}
+
+.rotated {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+.secondarynav {
+  background-color: #164289;
+  padding: 5px 10vw;
+}
+.secondarynav > a {
+  width: fit-content;
+  color: white;
+}
