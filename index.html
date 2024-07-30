@@ -17,10 +17,505 @@
 </head>
 
 <body>
-    <main>
-       
-    </main>
+    <header>
+        <div class="needs">
+            <a href="#">Need Help?</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Leave Feedback</a>
+        </div>
+        <nav>
+            <a href="#"><img src="./images/Logo.webp" alt="Kenland Logo"></a>
+            <div class="nav-right">
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+            </div>
+        </nav>
+        <nav class="secondarynav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Facilities</a>
+            <a href="#">Our Team</a>
+            <a href="#">Gallery</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Media</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="popup" id="popup" onclick="closeMenu(event)">
+        <div class="popup-content">
+            <div class="nav-right">
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <main>
+<section id="home">
+    <button onclick="prevSlide()">
+        <img src="./images/navigatearrow.webp" alt="Previous">
+    </button>
+    <div id="slider" class="slider">
+        <img src="./images/home/home.webp" alt="Home Image 1">
+        <img src="./images/home/home.webp" alt="Home Image 2">
+        <img src="./images/home/home.webp" alt="Home Image 3">
+    </div>
+    <button onclick="nextSlide()">
+        <img src="./images/navigatearrow.webp" alt="Next">
+    </button>
+    <div class="pagination" id="pagination">
+        <div class="dot active" onclick="setSlide(0)"></div>
+        <div class="dot" onclick="setSlide(1)"></div>
+        <div class="dot" onclick="setSlide(2)"></div>
+    </div>
+</section>
+<section id="about">
+    <div class="detail">
+        <div>
+            <img src="./images/about/discover.png" alt="About Image">
+            <h3>Discover our Specialties</h3>
+            <p>From non-surgical slipped disc treatmentsto
+                innovativemedicine less techniques,we
+                offer guaranteed results tailored to your needs.</p>
+        </div>
+        <div>
+            <img src="./images/about/experience.png" alt="About Image">
+            <h3>Experience the Difference</h3>
+            <p>Our Eco-Friendly Atmosphere provides
+                a calming and hygienic environment
+                essential for your well-being.</p>
+        </div>
+        <div>
+            <img src="./images/about/guidence.png" alt="About Image">
+            <h3>Get Proper Guidance</h3>
+            <p>Let us guide you in the right direction
+                for a complete cure, ensuring your journey to
+                recovery is smooth and successful.</p>
+        </div>
+        <div>
+            <img src="./images/about/invasive.png" alt="About Image">
+            <h3>Non-Invasive Spinal Care</h3>
+            <p>Trust in our expertise to provide modern
+                treatment solutions without the need for
+                invasive procedures or medication</p>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="leftset">
+            <h4>Welcome to</h4>
+            <h2>Natural Heath Care Centre <span></span></h2>
+            <p>&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel nibh eget ex
+                tincidunt
+                accumsan. Sed lectus mauris,
+                efficitur eu libero non, dignissim scelerisque ligula. Morbi tincidunt varius augue, sed
+                sagittis tortor dignissim ac.
+                Integer libero dui, hendrerit id convallis sit amet, tempor vel lacus. Sed nec iaculis nulla.
+                Donec sit amet leo ac
+                tellus imperdiet dignissim. Mauris diam tortor, mollis ut massa eu, suscipit accumsan odio.
+                Praesent euismod erat
+                lobortis eros ullamcorper, sit amet suscipit mauris congue. Sed sollicitudin egestas hendrerit.
+                In gravida auctor justo
+                in sodales. Praesent euismod erat lobortis eros ullamcorper, sit amet suscipit mauris congue.
+                Sed sollicitudin egestas
+                hendrerit. In gravida auctor justo in sodales.</p>
+            <p>Nam elementum posuere felis, eget condimentum ligula mattis dignissim. Nullam aliquam vehicula
+                magna, eget mattis augue
+                tincidunt sed. Curabitur sollicitudin arcu ac enim vestibulum, quis laoreet dui faucibus. Aenean
+                luctus fringilla nibh
+                id lacinia.</p>
+        </div>
+        <div class="rightset">
+            <div class="imagewrap">
+                <span></span>
+                <img src="./images/about/profile.webp" alt="">
+            </div>
+            <div class="info">
+                <h3>DR. RV Delisia (M.D) facial plastic & Surgery</h3>
+                <p>PG Dip in Manual Therapy, RIPT.12345<br />
+                    Reconstructive Surgeries<br />
+                    Natural Health Care Centre</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="banner">
+    <span></span>
+    <div class="heads">
+        <h3>AT GSCC <span></span></h3>
+        <h2>WE PROVIDE ADVANCED<br />
+            NON-INVASIVE TREATMENT<br />
+            FOR DISC BULGE, BACK & NECK PAIN</h2>
+    </div>
+    <div class="imagewrap">
+        <div>
+            <img src="./images/banner/heart.webp" alt="">
+            <h2>10+</h2>
+            <h3>YEAR EXPERIENCE</h3>
+        </div>
+        <div><img src="./images/banner/smile.webp" alt="">
+            <h2>11489</h2>
+            <h3>HAPPY PATIENTS</h3>
+        </div>
+    </div>
+</section>
+<section id="works">
+    <h1>How We Works</h1>
+    <div class="details">
+        <div>
+            <div>
+                <img src="./images/works/one.webp" alt="Work Image">
+                <span>01</span>
+            </div>
+            <h4>Pre Consultation</h4>
+            <p>We conduct a comprehensive review of your medical history and symptoms to tailor the
+                consultation to your needs.</p>
+        </div>
+        <img src="./images/works/top.webp" alt="">
+        <div>
+            <div>
+                <img src="./images/works/two.webp" alt="Work Image">
+                <span>02</span>
+            </div>
+            <h4>Patient Registration</h4>
+            <p>Efficiently register your details to ensure a smooth and personalized experience from the start.
+            </p>
+        </div>
+        <img src="./images/works/bottom.webp" alt="">
+        <div>
+            <div>
+                <img src="./images/works/three.webp" alt="Work Image">
+                <span>03</span>
+            </div>
+            <h4>Diagnostic Review</h4>
+            <p>Our experts meticulously analyze your diagnostic reports to craft a precise treatment plan.</p>
+        </div>
+        <img src="./images/works/top.webp" alt="">
+        <div>
+            <div>
+                <img src="./images/works/four.webp" alt="Work Image">
+                <span>04</span>
+            </div>
+            <h4>Personalized Care</h4>
+            <p>Receive customized treatment options designed to address your specific spine health needs
+                effectively.</p>
+        </div>
+    </div>
+</section>
+<section id="treatment">
+    <div class="left">
+        <h4>AT GSCC <span></span></h4>
+        <h2>We Provide Advanced<br />
+            Non- Surgical Treatment For</h2>
+        <ul>
+            <li>Intervertebral Disc prolapse</li>
+            <li>Compressive Myelopathy</li>
+            <li>Vertebral Subluxation</li>
+            <li>Acute & chronic low Back Pain & Neck Pain</li>
+            <li>Spondylosis</li>
+            <li>Upper & lower limb Radiculopathy</li>
+            <li>Spinal Nerve Compression</li>
+            <li>Shoulder Blade Pain</li>
+            <li>Failed Back Surgery Syndrome</li>
+        </ul>
+    </div>
+    <div class="imagewrap">
+        <img src="./images/treatment/image1.webp" alt="">
+        <img src="./images/treatment/image2.webp" alt="">
+    </div>
+</section>
+<section id="specialities">
+    <div class="content">
+        <h1>Our Specialities <span></span></h1>
+        <p>We specialize in Advanced Non-Surgical Spinal Decompression Treatment. Our revolutionary approach
+            combines spinal
+            manipulation with cutting-edge technology to address a wide range of spine-related issues.</p>
+        <div>
+            <div>
+                <img src="./images/specialist/safe.webp" alt="">
+                <div>
+                    <h2>SAFE & ECONOMICAL</h2>
+                    <p>Natural Centre offers a safe and economical alternative to traditional surgical
+                        interventions, providing hope to
+                        thousands of individuals experiencing back and neck pain.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/specialist/surgical.webp" alt="">
+                <div>
+                    <h2>NON SURGICAL SOLUTIONS</h2>
+                    <p>Since 2024, Natural Care Centre has been dedicated to providing safe and effective
+                        non-surgical
+                        solutions for spinal
+                        problems including disc prolapse, back pain, and neck pain.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/specialist/advanced.webp" alt="">
+                <div>
+                    <h2>ADVANCED TECHNOLOGY</h2>
+                    <p>Our treatments harness the power of advanced technology, utilizing sophisticated machinery to
+                        decompress the spinal cord
+                        and nerves, offering relief to those suffering from chronic pain.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <button id="playButton"><img src="./images/specialist/play.webp" alt="Play Button"></button>
+        <iframe id="videoIframe" src="https://www.youtube.com/embed/HciHIZe8QDo?si=9re5_RZ9WPr05jT-&amp;start=3"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="content">
+        <h2>Frequently Asked</h2>
+        <h1>Questions ?</h1>
+        <div class="info">
+            <div>
+                <div><span>01</span>
+                    <h3>Intervertebral Disc Prolapse</h3>
+                </div>
+                <button onclick="toggleFaq(this)"><img src="./images/faq/open.png" alt="Open"></button>
+            </div>
+            <p class="hidden">Dr. R Ravi research in spine problems has revealed that Spine Subluxation or
+                retrolisthesis is a
+                primary cause of
+                intervertebral disc prolapse, often undetectable during diagnosis. Bony subluxation gradually
+                disrupts the
+                intervertebral disc, weakening the end plate, leading to bulging and compression of the spinal
+                cord and nerves,
+                resulting in radiculopathy.</p>
+
+            <div>
+                <div><span>02</span>
+                    <h3>Who gets Spinal Problems?</h3>
+                </div>
+                <button onclick="toggleFaq(this)"><img src="./images/faq/open.png" alt="Open"></button>
+            </div>
+            <p class="hidden">Anyone can get spinal problems, but they are more common in individuals who are
+                older, have a family
+                history of spinal issues, engage in repetitive activities that strain the spine, or have poor
+                posture.</p>
+
+            <div>
+                <div><span>03</span>
+                    <h3>Diagnosing the Patients</h3>
+                </div>
+                <button onclick="toggleFaq(this)"><img src="./images/faq/open.png" alt="Open"></button>
+            </div>
+            <p class="hidden">Diagnosing spinal problems typically involves a physical examination, medical
+                history review, and
+                imaging tests such as X-rays, MRI, or CT scans to determine the exact nature and extent of the
+                problem.</p>
+
+            <div>
+                <div><span>04</span>
+                    <h3>Intervertebral Disc Prolapse</h3>
+                </div>
+                <button onclick="toggleFaq(this)"><img src="./images/faq/open.png" alt="Open"></button>
+            </div>
+            <p class="hidden">Intervertebral disc prolapse, also known as a herniated disc, occurs when the soft
+                inner gel of the
+                disc leaks out through a tear in the outer layer, pressing on nerves and causing pain or other
+                symptoms.</p>
+        </div>
+    </div>
+</section>
+<section class="testimonial">
+    <h2>Testimonials</h2>
+    <h1>What Our Client Say About Us?</h1>
+    <button onclick="prevTestimonial()"><img src="./images/navbar/arrowdown.png" alt="Previous"></button>
+    <div class="wrapper">
+        <div class="content">
+            <div class="individual" id="testimonial-1">
+                <div class="image">
+                    <img src="./images/testimonials/userbg.webp" alt="">
+                    <img src="./images/testimonials/user1.webp" alt="">
+                </div>
+                <div>
+                    <p>I'm working as an Officer in the Karnataka VAO Dept. Since about 10 years I was suffering
+                        from Back pain, for which I
+                        had undergone various expert Spinal treatments from Allopathic, Ayurveda & Traditional
+                        sectors. But even though each
+                        time I got reli...</p>
+                    <div class="detailimage">
+                        <img src="./images/testimonials/detail1.webp" alt="">
+                        <img src="./images/testimonials/detail1.webp" alt="">
+                    </div>
+                    <div>
+                        <h2>L. Mershik Raj</h2>
+                        <h3>Kochi</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="individual" id="testimonial-2">
+                <div class="image">
+                    <img src="./images/testimonials/userbg.webp" alt="">
+                    <img src="./images/testimonials/user1.webp" alt="">
+                </div>
+                <div>
+                    <p>I'm working as an Officer in the Karnataka VAO Dept. Since about 10 years I was suffering
+                        from Back pain, for which I
+                        had undergone various expert Spinal treatments from Allopathic, Ayurveda & Traditional
+                        sectors. But even though each
+                        time I got reli...</p>
+                    <div class="detailimage"><img src="./images/testimonials/detail1.webp" alt=""><img
+                            src="./images/testimonials/detail1.webp" alt=""></div>
+                    <div>
+                        <h2>L. Mershik Raj</h2>
+                        <h3>Kochi</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="individual" id="testimonial-3">
+                <div class="image">
+                    <img src="./images/testimonials/userbg.webp" alt="">
+                    <img src="./images/testimonials/user1.webp" alt="">
+                </div>
+                <div>
+                    <p>I'm working as an Officer in the Karnataka VAO Dept. Since about 10 years I was suffering
+                        from Back pain, for which I
+                        had undergone various expert Spinal treatments from Allopathic, Ayurveda & Traditional
+                        sectors. But even though each
+                        time I got reli...</p>
+                    <div class="detailimage"><img src="./images/testimonials/detail1.webp" alt=""><img
+                            src="./images/testimonials/detail1.webp" alt=""></div>
+                    <div>
+                        <h2>L. Mershik Raj</h2>
+                        <h3>Kochi</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="nextTestimonial()"><img src="./images/navbar/arrowdown.png" alt="Next"></button>
+</section>
+    </main>
+    <footer>
+        <div>
+            <h2>About Us <span></span></h2>
+            <p>Natural Health Care Centre (QEWW), is an ISO Certified Natural Health centre started in the year 2024
+                with a vision to
+                cure patients suffering from spine related problems.</p>
+            <div class="socials">
+                <a href=""><img src="./images/footer/facebook.webp" alt=""></a>
+                <a href=""><img src="./images/footer/insta.webp" alt=""></a>
+                <a href=""><img src="./images/footer/whatsapp.webp" alt=""></a>
+                <a href=""><img src="./images/footer/x.webp" alt=""></a>
+                <a href=""><img src="./images/footer/youtube.webp" alt=""></a>
+
+            </div>
+        </div>
+
+        <div>
+            <h2>About Us <span></span></h2>
+            <div class="linkstotop">
+                <div>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Home</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">About Us</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Services</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Our Cases</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Other Links</a>
+
+                </div>
+                <div>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Consulting</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Finance</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Testimonials</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">FAQ</a>
+                    <a href=""><img src="./images/navbar/arrowdown.png" alt="">Contact Us</a>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Open Hours<span></span></h2>
+            <div class="timings">
+                <span>
+                    <p>Monday - Friday</p>
+                    <p>8:00 - 20.00</p>
+                </span>
+                <span>
+                    <p>Saturday</p>
+                    <p>9:00 - 18.30</p>
+                </span>
+                <span>
+                    <p>Monday - Friday</p>
+                    <p>9:00 - 15.00</p>
+                </span>
+            </div>
+        </div>
+        <div>
+            <h2>News Letter<span></span></h2>
+            <p>Sign up to our Newsletter to receive product updates,
+                exclusive discounts, and offers.</p>
+            <div class="sendbtn">
+                <input type="text" placeholder="Email Address">
+                <button><img src="./images/footer/send.webp" alt=""></button>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright2024 All Rights Reserved by Kenland IT Solutions
+    </div>
     <script src="script.js"></script>
 </body>
 
