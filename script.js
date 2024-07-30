@@ -88,20 +88,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //fag
+let currentOpenFaq = null;
+
 function toggleFaq(button) {
   const answer = button.parentElement.nextElementSibling;
   const img = button.querySelector("img");
 
-  // Toggle the hidden class on the answer paragraph
+  // Close the currently open FAQ if it's not the same as the clicked one
+  if (currentOpenFaq && currentOpenFaq !== answer) {
+    currentOpenFaq.classList.add("hidden");
+    const currentOpenButton =
+      currentOpenFaq.previousElementSibling.querySelector("button img");
+    currentOpenButton.src = "./images/faq/open.png";
+    currentOpenButton.alt = "Open";
+  }
+
+  // Toggle the hidden class on the clicked FAQ
   answer.classList.toggle("hidden");
 
   // Swap the image
   if (img.alt === "Open") {
     img.src = "./images/faq/close.png";
     img.alt = "Close";
+    currentOpenFaq = answer; // Set the currently open FAQ
   } else {
     img.src = "./images/faq/open.png";
     img.alt = "Open";
+    currentOpenFaq = null; // No FAQ is currently open
   }
 }
 

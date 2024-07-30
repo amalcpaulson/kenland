@@ -138,13 +138,13 @@
 }
 
 .testimonial button:first-of-type {
-  left: 8vw;
+  left: 5vw;
   transform: rotate(180deg);
   top: 50%;
 }
 
 .testimonial button:last-of-type {
-  right: 8vw;
+  right: 2.5vw;
   top: calc(50% + 20px);
 }
 

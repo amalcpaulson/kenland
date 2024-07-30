@@ -223,7 +223,7 @@ footer .socials img {
 
 footer .linkstotop {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 footer .linkstotop > div {
   display: flex;
