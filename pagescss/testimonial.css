@@ -3,11 +3,42 @@
   overflow: hidden;
   max-width: 100%;
   width: 100%;
+  padding: 30px 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: url(../images/testimonials/bg.webp) center center/cover no-repeat;
+}
+
+.testimonial h2 {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 19.22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testimonial h1 {
+  color: #000;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24.22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: -30px;
+}
+.testimonial .wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .testimonial .content {
   display: flex;
   transition: transform 0.5s ease;
+  width: 100%;
 }
 
 .testimonial .individual {
@@ -16,43 +47,129 @@
   padding: 20px;
   flex-shrink: 0;
   max-width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 300px;
 }
-.testimonial .individual  .image{
-    width: 50px;
+
+.testimonial .individual .image {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 250px;
 }
-.individual .detailimage{
-    display: flex;
-    gap: 10px;
+
+.testimonial .individual .image img:nth-child(1) {
+  width: 250px;
+  position: absolute;
 }
-.individual .detailimage img{
-    width: 100px;
+.testimonial .individual .image img:nth-child(2) {
+  width: 190px;
+  margin-right: 10px;
+  margin-bottom: 17px;
+  z-index: 999;
 }
-.testimonial .individual  .image img{
-    width: 100%;
+.testimonial .individual > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+.individual .detailimage {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.individual p {
+  color: #000;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.individual h2 {
+  color: #004ec4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.individual h3 {
+  color: rgba(0, 0, 0, 0.69);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.individual .detailimage img {
+  width: 90px;
+}
+
+.testimonial .individual .image img {
+  width: 100%;
+}
+
 .testimonial button {
-  position: fixed;
-  top: 50%;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
   background: none;
   border: none;
   cursor: pointer;
   z-index: 10;
+  background-color: #004ec4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .testimonial button img {
-  width: 30px;
+  width: 7px;
 }
 
 .testimonial button:first-of-type {
-  left: 10px;
+  left: 8vw;
+  transform: rotate(180deg);
+  top: 50%;
 }
 
 .testimonial button:last-of-type {
-  right: 10px;
+  right: 8vw;
+  top: calc(50% + 20px);
+}
+
+@media screen and (max-width: 1300px) {
+  .testimonial .individual {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 900px) {
   .testimonial .individual {
     min-width: 100%;
+  }
+  .testimonial .individual .image {
+    width: 230px;
+    height: 220px;
+  }
+
+  .testimonial .individual .image img:nth-child(1) {
+    width: 230px;
+  }
+  .testimonial .individual .image img:nth-child(2) {
+    width: 175px;
+    margin-right: 13px;
+    margin-bottom: 17px;
   }
 }
