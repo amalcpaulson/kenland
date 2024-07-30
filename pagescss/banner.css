@@ -1,0 +1,99 @@
+#banner {
+  background: url(../images/banner/bg.webp) center center/cover no-repeat;
+  color: white;
+  padding: 4vh 10vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 20px;
+}
+#banner > span {
+  position: absolute;
+  z-index: 0;
+  background-color: #164289c2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#banner > div {
+  z-index: 400;
+  position: relative;
+}
+#banner .heads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#banner .heads h3 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: fit-content;
+}
+#banner .heads h3 span {
+  width: 130%;
+  height: 2px;
+  background-color: #fff;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 25.104px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 36.778px */
+}
+#banner .imagewrap {
+  display: flex;
+  gap: 30px;
+  width: fit-content;
+  text-align: center;
+}
+#banner .imagewrap > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#banner .imagewrap > div img {
+  width: 100px;
+}
+
+#banner .imagewrap > div h2 {
+  text-align: center;
+  font-size: 33.571px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#banner .imagewrap > div h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 1080px) {
+  #banner {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  #banner .heads h3 {
+    color: #fff;
+    font-size: 16px;
+  }
+  #banner h2 {
+    font-size: 20px;
+  }
+}
