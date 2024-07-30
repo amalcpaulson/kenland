@@ -6,6 +6,95 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <div class="needs">
+            <a href="#">Need Help?</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Leave Feedback</a>
+        </div>
+        <nav>
+            <a href="#"><img src="./images/Logo.webp" alt="Kenland Logo"></a>
+            <div class="nav-right">
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+            </div>
+        </nav>
+        <nav class="secondarynav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Facilities</a>
+            <a href="#">Our Team</a>
+            <a href="#">Gallery</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Media</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="popup" id="popup" onclick="closeMenu(event)">
+        <div class="popup-content">
+            <div class="nav-right">
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/home.png" alt="Home">
+                    <p>Dr. PM. Ravi Kumar <br />
+                        Treatment Methodology</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/spine.webp" alt="Spine">
+                    <p>Spine <br />
+                        Conditions</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/mri.webp" alt="MRI">
+                    <p>MRI<br />
+                        Reports</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/people.webp" alt="Appointment">
+                    <p>Book an<br />
+                        Appointment</p>
+                </a>
+                <a href="#" onclick="rotateButton(this)">
+                    <img src="./images/navbar/call.png" alt="Call" class="call">
+                    <p>Call Us</p>
+                    <button><img src="./images/navbar/arrowdown.png" alt="Arrow Down"></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <section id="home">
         <button onclick="prevSlide()">
             <img src="./images/navigatearrow.webp" alt="Previous">
@@ -90,6 +179,26 @@
                         Reconstructive Surgeries<br />
                         Natural Health Care Centre</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner">
+        <span></span>
+        <div class="heads">
+            <h3>AT GSCC <span></span></h3>
+            <h2>WE PROVIDE ADVANCED<br />
+                NON-INVASIVE TREATMENT<br />
+                FOR DISC BULGE, BACK & NECK PAIN</h2>
+        </div>
+        <div class="imagewrap">
+            <div>
+                <img src="./images/banner/heart.webp" alt="">
+                <h2>10+</h2>
+                <h3>YEAR EXPERIENCE</h3>
+            </div>
+            <div><img src="./images/banner/smile.webp" alt="">
+                <h2>11489</h2>
+                <h3>HAPPY PATIENTS</h3>
             </div>
         </div>
     </section>
