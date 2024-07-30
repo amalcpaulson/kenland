@@ -1,0 +1,58 @@
+.testimonial {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+.testimonial .content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial .individual {
+  min-width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-shrink: 0;
+  max-width: 50%;
+}
+.testimonial .individual  .image{
+    width: 50px;
+}
+.individual .detailimage{
+    display: flex;
+    gap: 10px;
+}
+.individual .detailimage img{
+    width: 100px;
+}
+.testimonial .individual  .image img{
+    width: 100%;
+}
+.testimonial button {
+  position: fixed;
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.testimonial button img {
+  width: 30px;
+}
+
+.testimonial button:first-of-type {
+  left: 10px;
+}
+
+.testimonial button:last-of-type {
+  right: 10px;
+}
+
+@media (max-width: 900px) {
+  .testimonial .individual {
+    min-width: 100%;
+  }
+}
