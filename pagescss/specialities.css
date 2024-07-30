@@ -11,6 +11,7 @@
   width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
+  min-width: 330px;
 }
 
 #specialities > .content {
@@ -90,9 +91,33 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 50%;
+}
+#specialities .video button img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: contain;
 }
 #specialities .video iframe {
   width: 100%;
   height: 100%;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  #specialities {
+    flex-direction: column;
+  }
+
+  #specialities > div {
+    width: 100%;
+  }
+  #specialities .video iframe {
+    aspect-ratio: 1/0.6;
+  }
 }

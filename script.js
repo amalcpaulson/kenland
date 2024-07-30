@@ -86,3 +86,21 @@ document.addEventListener("DOMContentLoaded", function () {
   videoIframe.src +=
     (videoIframe.src.includes("?") ? "&" : "?") + "enablejsapi=1";
 });
+
+//fag
+function toggleFaq(button) {
+  const answer = button.parentElement.nextElementSibling;
+  const img = button.querySelector("img");
+
+  // Toggle the hidden class on the answer paragraph
+  answer.classList.toggle("hidden");
+
+  // Swap the image
+  if (img.alt === "Open") {
+    img.src = "./images/faq/close.png";
+    img.alt = "Close";
+  } else {
+    img.src = "./images/faq/open.png";
+    img.alt = "Open";
+  }
+}
