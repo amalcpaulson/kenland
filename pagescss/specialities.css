@@ -1,0 +1,98 @@
+#specialities {
+  display: flex;
+  background-color: white;
+  gap: 20px;
+  padding: 20px 10vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#specialities > div {
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+#specialities > .content {
+  gap: 10px;
+  max-width: 550px;
+}
+
+#specialities > .content h1 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 5px;
+  color: #164289;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#specialities > .content h1 span {
+  height: 1px;
+  width: 60%;
+  background-color: #164289;
+}
+
+#specialities > .content > p {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: justify;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* 22.395px */
+}
+
+#specialities > .content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#specialities > .content > div > div {
+  display: flex;
+  gap: 10px;
+}
+#specialities > .content > div > div img {
+  width: 100px;
+}
+#specialities > .content > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#specialities > .content > div h2 {
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 22.395px */
+}
+#specialities > .content > div p {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+#specialities .video {
+  position: relative;
+  min-width: 330px;
+}
+
+#specialities .video button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#specialities .video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
